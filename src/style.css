@@ -1,0 +1,140 @@
+@import url("https://fonts.googleapis.com/css2?family=Anton&family=Audiowide&family=Bangers&family=Coral+Pixels&family=Darumadrop+One&family=Orbitron:wght@400..900&family=Rajdhani:wght@300;400;500;600;700&family=Reenie+Beanie&family=Righteous&family=Rock+Salt&family=Syncopate:wght@400;700&display=swap");
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+.darumadrop-one-regular {
+  font-family: "Darumadrop One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.anton-regular {
+  font-family: "Anton", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.rajdhani-light {
+  font-family: "Rajdhani", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.rajdhani-regular {
+  font-family: "Rajdhani", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.rajdhani-medium {
+  font-family: "Rajdhani", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.rajdhani-semibold {
+  font-family: "Rajdhani", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.rajdhani-bold {
+  font-family: "Rajdhani", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.orbitron-400 {
+  font-family: "Orbitron", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.orbitron-600 {
+  font-family: "Orbitron", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.righteous-regular {
+  font-family: "Righteous", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.bangers-regular {
+  font-family: "Bangers", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.coral-pixels-regular {
+  font-family: "Coral Pixels", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.rock-salt-regular {
+  font-family: "Rock Salt", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.audiowide-regular {
+  font-family: "Audiowide", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.reenie-beanie-regular {
+  font-family: "Reenie Beanie", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.syncopate-regular {
+  font-family: "Syncopate", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.syncopate-bold {
+  font-family: "Syncopate", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.inset-shadow {
+  @apply shadow-[inset_0_0_6px_rgba(0,0,0,0.3)];
+}
+
+@keyframes float {
+  0% {
+    translate: 0 -24px;
+  }
+  100% {
+    translate: 0 0px;
+  }
+}
+
+.floating {
+  animation: float infinite 3s ease-in-out alternate;
+}
+
+@layer {
+  body {
+    -webkit-overflow-scrolling: touch;
+    @apply p-0 md:p-8 bg-slate-50 dark:bg-slate-900 dark:text-white scroll-smooth transition-all duration-300;
+  }
+
+  .card {
+    @apply bg-slate-100 dark:bg-slate-600 px-12 py-6 rounded-2xl flex flex-col justify-center items-center gap-10 drop-shadow-slate-300 dark:drop-shadow-slate-700 drop-shadow-2xl transition-all duration-500;
+  }
+
+  .card:hover {
+    @apply skew-0 translate-0;
+  }
+}
