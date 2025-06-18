@@ -127,7 +127,7 @@
 @layer {
   body {
     -webkit-overflow-scrolling: touch;
-    @apply p-0 md:p-8 bg-slate-50 dark:bg-slate-900 dark:text-white scroll-smooth transition-all duration-300;
+    @apply p-2 md:p-8 bg-slate-50 dark:bg-slate-900 dark:text-white scroll-smooth transition-all duration-300;
   }
 
   .card {
