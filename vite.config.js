@@ -5,7 +5,7 @@ console.log('✅ Vite config loaded');
 
 
 export default defineConfig({
-  base: '/fusion-agency/',
+  base: '/fusion_agency/',
   plugins: [
     tailwindcss(),
     
